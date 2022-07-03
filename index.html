@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src ="javascript.js" defer></script>
+    <title>tic-tac-toe</title>
+</head>
+<body>
+    <header><div>Tic-Tac-Toe</div></header>
+    <main>
+        <div class = "boardholder">
+            <table>
+                <tr>
+                    <td id = "a" onclick = "updateBoard(this.id)"></td>
+                    <td id = "b" onclick = "updateBoard(this.id)"></td>
+                    <td id = "c" onclick = "updateBoard(this.id)"></td>
+                </tr>
+                <tr>
+                    <td id = "d" onclick = "updateBoard(this.id)"></td>  
+                    <td id = "e" onclick = "updateBoard(this.id)"></td>
+                    <td id = "f" onclick = "updateBoard(this.id)"></td>
+                </tr>
+                <tr>
+                    <td id = "g" onclick = "updateBoard(this.id)"></td>
+                    <td id = "h" onclick = "updateBoard(this.id)"></td>
+                    <td id = "i" onclick = "updateBoard(this.id)"></td>
+                </tr>
+            </table>
+        </div>
+        <div class ="startandscore">
+            <container class = "xo">
+                <button type ="button" id = 'x' class ="x" onclick = "selectX()">X</button>
+                <button type ="button" id = 'o' class ="o" onclick = "selectO()">O</button>
+            </container>
+            <button type="button" class = "reset" onclick = "reset()">Reset</button>
+            <div class = "scoreboardHolder">Scoreboard:
+                <div class = "containscore">
+                    <div>Player:
+                        <div id = "playerScoreHolder">0</div>
+                    </div>
+                    <div>Computer:
+                        <div id = "computerScoreHolder">0</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </main>
+    <footer>dilaaap</footer>
+</body>
+</html>
